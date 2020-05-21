@@ -1,0 +1,19 @@
+{
+    "user_name": "test",
+    "password": "some hash crypto shit",
+    "album_name": "test",
+    "photo": [
+        {
+            "name": "test_1",
+            "vissible": true
+        },
+        {
+            "name": "test_1",
+            "vissible": true
+        },
+        {
+            "name": "test_1",
+            "vissible": true
+        }
+        ]   
+}

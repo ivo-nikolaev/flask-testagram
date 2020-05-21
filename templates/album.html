@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Testagram</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <script>
+      let photos = JSON.parse('{{ photos | tojson | safe}}');
+    </script>
+  </head>
+
+  <body>
+    <h2> Test_User's Album</h2>
+    <ul>
+        {% for photo in photos%}
+          <li>
+            <h3>{{photo}}</h3>
+            <img src="../photo/{{photo}}" width="400" height="300">
+          </li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
